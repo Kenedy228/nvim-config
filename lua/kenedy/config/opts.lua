@@ -1,0 +1,13 @@
+vim.o.number = true
+vim.o.relativenumber = true
+vim.o.shiftwidth = 4
+vim.o.tabstop = 4
+vim.o.signcolumn = "yes"
+vim.o.swapfile = false
+vim.o.winborder = "rounded"
+vim.o.scrolloff = 8
+vim.o.textwidth = 80
+vim.o.colorcolumn = "+1"
+vim.o.wrap = true
+vim.o.linebreak = true
+vim.o.breakindent = true
