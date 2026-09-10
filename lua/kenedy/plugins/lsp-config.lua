@@ -3,6 +3,6 @@ return {
 	config = function()
 		local servers = require("kenedy.config.lsp")
 
-		vim.lsp.enable(servers)
+		vim.lsp.enable(vim.tbl_keys(servers))
 	end
 }

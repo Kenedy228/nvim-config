@@ -7,5 +7,9 @@ return {
 	"go",
 	"javascript",
 	"typescript",
-	"svelte"
+	"svelte",
+	"markdown",
+	"markdown_inline",
+	"latex",
+	"dart",
 }
