@@ -16,8 +16,8 @@ vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references,
 vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, { desc = "переименовать переменную во всем проекте" })
 vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "вызывать тулу для исправления" })
 
-vim.keymap.set("n", "<leader>[d", vim.diagnostic.goto_next, { desc = "перейти к следующей ошибке/ворнингу" })
-vim.keymap.set("n", "<leader>]d", vim.diagnostic.goto_prev, { desc = "перейти к предыдущей ошибке/ворнингу" })
+vim.keymap.set("n", "<leader>[d", vim.diagnostic.goto_prev, { desc = "перейти к предыдущей ошибке/ворнингу" })
+vim.keymap.set("n", "<leader>]d", vim.diagnostic.goto_next, { desc = "перейти к следующей ошибке/ворнингу" })
 
 vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist)
 
@@ -25,13 +25,13 @@ vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist)
 vim.keymap.set("n", "<leader>pv", ":Oil<CR>", { desc = "открыть родительскую директорию через Oil" })
 
 -- undotree bindings
-vim.keymap.set("n", "<leader>1", vim.cmd.UndotreeToggle, { desc = "открыть локальную историю изменений файла" })
+vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle, { desc = "открыть локальную историю изменений файла" })
 
 -- gitsigns bindings
 local gs = require("gitsigns")
 
-vim.keymap.set("n", "<leader>[h", gs.next_hunk, { desc = "прыгнуть к следующему изменению в файле" })
-vim.keymap.set("n", "<leader>]h", gs.prev_hunk, { desc = "прыгнуть к предыдущему изменению в файле" })
+vim.keymap.set("n", "<leader>[h", gs.prev_hunk, { desc = "прыгнуть к предыдущему изменению в файле" })
+vim.keymap.set("n", "<leader>]h", gs.next_hunk, { desc = "прыгнуть к следующему изменению в файле" })
 vim.keymap.set("n", "<leader>hs", gs.stage_hunk, { desc = "добавить изменения в stage индекс" })
 vim.keymap.set("n", "<leader>hu", gs.undo_stage_hunk, { desc = "сбросить изменения из stage индекса" })
 vim.keymap.set("n", "<leader>hr", gs.reset_hunk, { desc = "откатить изменения в блоке до состояния из HEAD" })
@@ -56,8 +56,8 @@ vim.keymap.set("n", "<leader>7", function() harpoon:list():select(7) end, { desc
 vim.keymap.set("n", "<leader>8", function() harpoon:list():select(8) end, { desc = "перейти к восьмому буферу" })
 vim.keymap.set("n", "<leader>9", function() harpoon:list():select(9) end, { desc = "перейти к девятому буферу" })
 
-vim.keymap.set("n", "<leader>pn", function() harpoon:list():prev() end, { desc = "перейти к следующему буферу" })
-vim.keymap.set("n", "<leader>pN", function() harpoon:list():next() end, { desc = "перейти к предыдущему буферу" })
+vim.keymap.set("n", "<leader>pn", function() harpoon:list():next() end, { desc = "перейти к следующему буферу" })
+vim.keymap.set("n", "<leader>pN", function() harpoon:list():prev() end, { desc = "перейти к предыдущему буферу" })
 
 -- themery
 vim.keymap.set("n", "<leader>tt", ":Themery<CR>", { desc = "открыть селектор с темами" })
