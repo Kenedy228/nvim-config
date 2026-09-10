@@ -75,7 +75,8 @@ Query, Go, JavaScript, TypeScript, Svelte, Markdown/Markdown inline, LaTeX и Da
 
 | Клавиши | Действие |
 |---|---|
-| `<leader>ff` / `<leader>fg` | Поиск файлов / текста |
+| `<leader>ff` | Поиск файлов |
+| `<leader>fw` / `<leader>fg` | Поиск текста внутри файлов проекта |
 | `<leader>pv` | Oil |
 | `<leader>u` | UndoTree |
 | `<leader>px` / `<leader>pb` | Добавить файл в Harpoon / открыть список |

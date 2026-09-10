@@ -5,6 +5,7 @@ vim.keymap.set("n", "<leader>o", ":update<CR> :source<CR>", { desc = "приме
 local telescope = require("telescope.builtin")
 vim.keymap.set("n", "<leader>ff", telescope.find_files, { desc = "открыть поиск файлов внутри проекта" })
 vim.keymap.set("n", "<leader>fg", telescope.live_grep, { desc = "открыть поиск по слову среди файлов проекта" })
+vim.keymap.set("n", "<leader>fw", telescope.live_grep, { desc = "поиск текста внутри файлов проекта" })
 
 -- lsp bindings
 vim.keymap.set("n", "<leader>lf", vim.lsp.buf.format, { desc = "форматировать файл через lsp-сервак" })
