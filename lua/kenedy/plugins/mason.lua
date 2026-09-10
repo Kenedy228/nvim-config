@@ -11,7 +11,7 @@ return {
 		},
 
 		config = function()
-			local servers = require("kenedy.config.lsp")
+			local servers = require("kenedy.config.mason")
 
 			require("mason-lspconfig").setup({
 				ensure_installed = servers,
