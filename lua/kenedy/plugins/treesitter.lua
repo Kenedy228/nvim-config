@@ -1,15 +1,19 @@
 return {
 	"nvim-treesitter/nvim-treesitter",
-	branch = "master", -- Явное указание старой стабильной ветки
+	lazy = false,
 	build = ":TSUpdate",
+
 	config = function()
 		local parsers = require("kenedy.config.treesitter")
 
-		require("nvim-treesitter.configs").setup({
-			ensure_installed = parsers,
-			highlight = {
-				enable = true, -- В старой ветке это снова будет работать
-			},
+		require("nvim-treesitter").setup()
+
+		require("nvim-treesitter").install(parsers)
+
+		vim.api.nvim_create_autocmd("FileType", {
+			callback = function()
+				pcall(vim.treesitter.start)
+			end,
 		})
 	end,
 }
