@@ -61,3 +61,10 @@ vim.keymap.set("n", "<leader>pN", function() harpoon:list():next() end, { desc =
 
 -- themery
 vim.keymap.set("n", "<leader>tt", ":Themery<CR>", { desc = "открыть селектор с темами" })
+
+-- vimtex
+vim.keymap.set("n", "<leader>lc", "<cmd>VimtexCompile<CR>", { desc = "LaTeX: compile" })
+vim.keymap.set("n", "<leader>lk", "<cmd>VimtexStop<CR>", { desc = "LaTeX: stop compiler" })
+vim.keymap.set("n", "<leader>ls", "<cmd>VimtexStatus<CR>", { desc = "LaTeX: status" })
+vim.keymap.set("n", "<leader>le", "<cmd>VimtexErrors<CR>", { desc = "LaTeX: errors" })
+vim.keymap.set("n", "<leader>lC", "<cmd>VimtexClean<CR>", { desc = "LaTeX: clean auxiliary files" })

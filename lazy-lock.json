@@ -23,6 +23,7 @@
   "themery.nvim": { "branch": "main", "commit": "bfa58f4b279d21cb515b28023e1b68ec908584b2" },
   "todo-comments.nvim": { "branch": "main", "commit": "31e3c38ce9b29781e4422fc0322eb0a21f4e8668" },
   "undotree": { "branch": "master", "commit": "6fa6b57cda8459e1e4b2ca34df702f55242f4e4d" },
+  "vimtex": { "branch": "master", "commit": "e355987594cbf16283bee7b37e3aa3a65d5e1c5c" },
   "which-key.nvim": { "branch": "main", "commit": "3aab2147e74890957785941f0c1ad87d0a44c15a" },
   "zenbones.nvim": { "branch": "main", "commit": "8304d8df9b823ff11e103afa62f38c39f534abe6" }
 }
