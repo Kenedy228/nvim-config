@@ -6,5 +6,6 @@ vim.api.nvim_create_autocmd({ "BufWinEnter", "FileType" }, {
 	callback = function()
 		local prose = { markdown = true, tex = true, plaintex = true }
 		vim.wo.wrap = prose[vim.bo.filetype] == true
+		vim.wo.spell = vim.bo.filetype == "markdown"
 	end,
 })
