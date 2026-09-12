@@ -203,6 +203,9 @@ JS/TS/JSON/YAML/Markdown/CSS/HTML через Prettier. Для остальных
 | `<leader>1` … `<leader>9` | Перейти к файлу Harpoon |
 | `<leader>pn` / `<leader>pN` | Следующий / предыдущий файл Harpoon |
 | `<leader>[d` / `<leader>]d` | Предыдущая / следующая диагностика |
+| `<leader>xx` / `<leader>xX` | Trouble: диагностики загруженных буферов / текущего буфера |
+| `<leader>xq` / `<leader>xl` | Trouble: quickfix / location list |
+| `<leader>xs` / `<leader>xr` | Trouble: символы документа / LSP-определения и ссылки |
 | `<leader>[h` / `<leader>]h` | Предыдущее / следующее Git-изменение |
 | `<leader>gd` / `<leader>gr` | Определение / использования |
 | `<leader>k` / `<leader>rn` / `<leader>ca` | Справка / переименование / code action |
