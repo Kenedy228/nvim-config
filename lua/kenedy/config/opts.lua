@@ -10,6 +10,6 @@ vim.o.winborder = "rounded"
 vim.o.scrolloff = 8
 vim.o.textwidth = 0
 vim.o.colorcolumn = "81"
-vim.o.wrap = false
+vim.o.wrap = true
 vim.o.linebreak = true
 vim.o.breakindent = true
