@@ -8,8 +8,6 @@ vim.keymap.set("n", "<leader>fg", telescope.live_grep, { desc = "открыть 
 vim.keymap.set("n", "<leader>fw", telescope.live_grep, { desc = "поиск текста внутри файлов проекта" })
 
 -- lsp bindings
-vim.keymap.set("n", "<leader>lf", vim.lsp.buf.format, { desc = "форматировать файл через lsp-сервак" })
-
 vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, { desc = "переход к определению переменной" })
 vim.keymap.set("n", "<leader>k", vim.lsp.buf.hover, { desc = "открыть окно описания" })
 vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references,

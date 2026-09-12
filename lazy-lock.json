@@ -3,6 +3,7 @@
   "bullets.vim": { "branch": "master", "commit": "81570b98ca44b4100b3ddcf8d9ca74b9a9b0c884" },
   "catppuccin": { "branch": "main", "commit": "edefef779ab08ce1a4a404713e3012b0d202bd35" },
   "codecompanion.nvim": { "branch": "main", "commit": "9c5456bc47edb645d6d6bc0297d2b75fabd7df18" },
+  "conform.nvim": { "branch": "master", "commit": "016802de402556da54c36bd7359b441266b01cdd" },
   "github-theme": { "branch": "main", "commit": "c106c9472154d6b2c74b74565616b877ae8ed31d" },
   "gitsigns.nvim": { "branch": "main", "commit": "f2421c550618d257048afa650413d9e542ddbe67" },
   "gruber-darker.nvim": { "branch": "main", "commit": "50fa4e583099729fcaaadc73a5afb74f7a91a625" },

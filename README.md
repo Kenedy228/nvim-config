@@ -177,6 +177,18 @@ Dart использует внешний SDK, остальные серверы 
 Парсеры перечислены в `lua/kenedy/config/treesitter.lua`: C, Lua, Vim/Vimdoc,
 Query, Go, JavaScript, TypeScript, Svelte, Markdown/Markdown inline, LaTeX и Dart.
 
+## Форматирование
+
+Conform форматирует при сохранении: Lua через StyLua, Go через goimports/gofmt,
+JS/TS/JSON/YAML/Markdown/CSS/HTML через Prettier. Для остальных типов файлов
+(включая Dart) используется доступный LSP-форматтер. Локальный Prettier проекта
+имеет приоритет перед установленным через Mason.
+
+На новой машине установи инструменты: `:MasonInstall stylua prettier goimports`.
+Команда `gofmt` поставляется с Go. Диагностика форматтеров: `:ConformInfo`.
+`<leader>uf` отключает автоформатирование текущего буфера; для всего сеанса
+используй `:lua vim.g.disable_autoformat = true`. Ручное `<leader>lf` остаётся доступным.
+
 ## Основные клавиши
 
 `<leader>` — пробел.
@@ -194,7 +206,8 @@ Query, Go, JavaScript, TypeScript, Svelte, Markdown/Markdown inline, LaTeX и Da
 | `<leader>[h` / `<leader>]h` | Предыдущее / следующее Git-изменение |
 | `<leader>gd` / `<leader>gr` | Определение / использования |
 | `<leader>k` / `<leader>rn` / `<leader>ca` | Справка / переименование / code action |
-| `<leader>lf` | Форматирование через LSP |
+| `<leader>lf` | Conform: форматировать файл / выделение, LSP как запасной вариант |
+| `<leader>uf` | Включить / выключить форматирование при сохранении текущего буфера |
 | `<leader>tt` | Выбор темы |
 | `<leader>lc` / `<leader>lk` | Запустить / остановить компиляцию LaTeX |
 | `<leader>?` | Подсказки which-key |
