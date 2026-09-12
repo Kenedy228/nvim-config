@@ -10,6 +10,7 @@ end
 
 return {
 	"olimorris/codecompanion.nvim",
+	branch = "main", -- Lazy needs a branch even when the checkout is pinned to a tag.
 	version = "v19.24.0",
 	cmd = { "CodeCompanion", "CodeCompanionChat", "CodeCompanionActions", "CodeCompanionCmd" },
 	dependencies = { "nvim-lua/plenary.nvim", "nvim-treesitter/nvim-treesitter" },
