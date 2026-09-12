@@ -1,9 +1,48 @@
 return {
 	"zaldih/themery.nvim",
 	lazy = false,
-	config = function()
-		require("themery").setup({
-			themes = { "ring0dark", "github_dark_high_contrast", "rose-pine", "zenbones", "gruber-darker", "koda" }
-		})
-	end
+	dependencies = {
+		"ring0-dark.nvim", "github-theme", "rose-pine", "zenbones.nvim", "gruber-darker.nvim", "koda.nvim",
+		"tokyonight.nvim", "catppuccin", "kanagawa.nvim", "gruvbox.nvim",
+	},
+	opts = {
+		livePreview = true,
+		themes = {
+			-- Keep the first six positions: Themery persists the selected index.
+			{ name = "Ring0 Dark", colorscheme = "ring0dark", before = "vim.o.background = 'dark'" },
+			{ name = "GitHub Dark High Contrast", colorscheme = "github_dark_high_contrast", before = "vim.o.background = 'dark'" },
+			{ name = "Rose Pine", colorscheme = "rose-pine", before = "vim.o.background = 'dark'" },
+			{ name = "Zenbones Dark", colorscheme = "zenbones", before = "vim.o.background = 'dark'" },
+			{ name = "Gruber Darker", colorscheme = "gruber-darker", before = "vim.o.background = 'dark'" },
+			{ name = "Koda Dark", colorscheme = "koda", before = "vim.o.background = 'dark'" },
+			{ name = "Tokyo Night", colorscheme = "tokyonight-night" },
+			{ name = "Tokyo Night Storm", colorscheme = "tokyonight-storm" },
+			{ name = "Tokyo Night Moon", colorscheme = "tokyonight-moon" },
+			{ name = "Tokyo Night Day (light)", colorscheme = "tokyonight-day" },
+			{ name = "Catppuccin Mocha", colorscheme = "catppuccin-mocha" },
+			{ name = "Catppuccin Macchiato", colorscheme = "catppuccin-macchiato" },
+			{ name = "Catppuccin Frappe", colorscheme = "catppuccin-frappe" },
+			{ name = "Catppuccin Latte (light)", colorscheme = "catppuccin-latte" },
+			{ name = "Kanagawa Wave", colorscheme = "kanagawa-wave", before = "vim.o.background = 'dark'" },
+			{ name = "Kanagawa Dragon", colorscheme = "kanagawa-dragon", before = "vim.o.background = 'dark'" },
+			{ name = "Kanagawa Lotus (light)", colorscheme = "kanagawa-lotus", before = "vim.o.background = 'light'" },
+			{ name = "Gruvbox Dark", colorscheme = "gruvbox", before = "vim.o.background = 'dark'" },
+			{ name = "Gruvbox Light", colorscheme = "gruvbox", before = "vim.o.background = 'light'" },
+			{ name = "Rose Pine Moon", colorscheme = "rose-pine-moon" },
+			{ name = "Rose Pine Dawn (light)", colorscheme = "rose-pine-dawn" },
+			{ name = "GitHub Dark", colorscheme = "github_dark" },
+			{ name = "GitHub Dark Default", colorscheme = "github_dark_default" },
+			{ name = "GitHub Dark Dimmed", colorscheme = "github_dark_dimmed" },
+			{ name = "GitHub Light", colorscheme = "github_light" },
+			{ name = "GitHub Light High Contrast", colorscheme = "github_light_high_contrast" },
+			{ name = "Zenbones Light", colorscheme = "zenbones", before = "vim.o.background = 'light'" },
+			{ name = "Zenwritten Dark", colorscheme = "zenwritten", before = "vim.o.background = 'dark'" },
+			{ name = "Zenwritten Light", colorscheme = "zenwritten", before = "vim.o.background = 'light'" },
+			{ name = "Nordbones", colorscheme = "nordbones", before = "vim.o.background = 'dark'" },
+			{ name = "Forestbones", colorscheme = "forestbones", before = "vim.o.background = 'dark'" },
+			{ name = "Koda Light", colorscheme = "koda-light", before = "vim.o.background = 'light'" },
+			{ name = "Koda Moss", colorscheme = "koda-moss", before = "vim.o.background = 'dark'" },
+			{ name = "Koda Glade (light)", colorscheme = "koda-glade", before = "vim.o.background = 'light'" },
+		},
+	},
 }
