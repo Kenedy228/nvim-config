@@ -4,6 +4,7 @@ return {
 	"vim",
 	"vimdoc",
 	"query",
+	"yaml",
 	"go",
 	"javascript",
 	"typescript",

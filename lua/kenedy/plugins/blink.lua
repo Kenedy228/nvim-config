@@ -1,6 +1,7 @@
 return {
 	"saghen/blink.cmp",
 	version = "1.*",
+	dependencies = { "milanglacier/minuet-ai.nvim" },
 	opts = {
 		keymap = {
 			preset = "default",
@@ -11,6 +12,7 @@ return {
 		},
 
 		completion = {
+			trigger = { prefetch_on_insert = false },
 			documentation = {
 				auto_show = true,
 			},
@@ -30,6 +32,20 @@ return {
 				"path",
 				"snippets",
 				"buffer",
+				"minuet",
+			},
+			per_filetype = {
+				codecompanion = { "codecompanion", "buffer" },
+			},
+			providers = {
+				minuet = {
+					enabled = function()
+						local ollama = require("kenedy.ollama")
+						return ollama.available(ollama.models.completion)
+					end,
+					name = "minuet", module = "minuet.blink", async = true,
+					timeout_ms = 10000, score_offset = 50,
+				},
 			},
 		},
 
