@@ -35,9 +35,15 @@ return {
 				"minuet",
 			},
 			per_filetype = {
+				lua = { "lazydev", "lsp", "path", "snippets", "buffer", "minuet" },
 				codecompanion = { "codecompanion", "buffer" },
 			},
 			providers = {
+				lazydev = {
+					name = "LazyDev",
+					module = "lazydev.integrations.blink",
+					score_offset = 100,
+				},
 				minuet = {
 					enabled = function()
 						local ollama = require("kenedy.ollama")

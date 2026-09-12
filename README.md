@@ -177,6 +177,13 @@ Dart использует внешний SDK, остальные серверы 
 Парсеры перечислены в `lua/kenedy/config/treesitter.lua`: C, Lua, Vim/Vimdoc,
 Query, Go, JavaScript, TypeScript, Svelte, Markdown/Markdown inline, LaTeX и Dart.
 
+## Lua-конфигурация Neovim
+
+lazydev.nvim загружается только для Lua: помогает LuaLS подключать библиотеки
+плагинов и типы Neovim. При использовании `vim.uv` подключаются типы libuv.
+Источник LazyDev добавлен в Blink только для Lua; остальные источники, включая
+Minuet и отдельное дополнение CodeCompanion, сохранены. Диагностика: `:LazyDev`.
+
 ## Форматирование
 
 Conform форматирует при сохранении: Lua через StyLua, Go через goimports/gofmt,
