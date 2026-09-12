@@ -1,7 +1,7 @@
 return {
 	"saghen/blink.cmp",
 	version = "1.*",
-	dependencies = { "milanglacier/minuet-ai.nvim" },
+	dependencies = { "milanglacier/minuet-ai.nvim", "rafamadriz/friendly-snippets" },
 	opts = {
 		keymap = {
 			preset = "default",
@@ -9,6 +9,8 @@ return {
 			["<CR>"] = { "accept", "fallback" },
 			["<Tab>"] = { "select_next", "fallback" },
 			["<S-Tab>"] = { "select_prev", "fallback" },
+			["<C-l>"] = { "snippet_forward", "fallback" },
+			["<C-h>"] = { "snippet_backward", "fallback" },
 		},
 
 		completion = {
