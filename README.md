@@ -197,6 +197,8 @@ JS/TS/JSON/YAML/Markdown/CSS/HTML через Prettier. Для остальных
 |---|---|
 | `<leader>ff` | Поиск файлов |
 | `<leader>fw` / `<leader>fg` | Поиск текста внутри файлов проекта |
+| `<leader>sr` | grug-far: поиск и замена; в Visual — с выделенным текстом |
+| `<leader>sw` | grug-far: поиск и замена текста слова под курсором |
 | `<leader>pv` | Oil |
 | `<leader>u` | UndoTree |
 | `<leader>px` / `<leader>pb` | Добавить файл в Harpoon / открыть список |
@@ -216,6 +218,10 @@ JS/TS/JSON/YAML/Markdown/CSS/HTML через Prettier. Для остальных
 | `<leader>tt` | Выбор темы |
 | `<leader>lc` / `<leader>lk` | Запустить / остановить компиляцию LaTeX |
 | `<leader>?` | Подсказки which-key |
+
+grug-far ищет относительно текущего рабочего каталога (`:pwd`); область поиска
+можно ограничить полями Paths / Files Filter. После ввода замены показывается diff,
+применение — `\r` в буфере grug-far (`<localleader>` задан как `\`).
 
 Например, `saiw)` окружает слово круглыми скобками, `sd)` удаляет их,
 а `sr)"` заменяет скобки двойными кавычками.
