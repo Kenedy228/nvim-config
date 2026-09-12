@@ -208,9 +208,13 @@ JS/TS/JSON/YAML/Markdown/CSS/HTML через Prettier. Для остальных
 | `<leader>k` / `<leader>rn` / `<leader>ca` | Справка / переименование / code action |
 | `<leader>lf` | Conform: форматировать файл / выделение, LSP как запасной вариант |
 | `<leader>uf` | Включить / выключить форматирование при сохранении текущего буфера |
+| `sa` / `sd` / `sr` | MiniSurround: добавить / удалить / заменить окружение |
 | `<leader>tt` | Выбор темы |
 | `<leader>lc` / `<leader>lk` | Запустить / остановить компиляцию LaTeX |
 | `<leader>?` | Подсказки which-key |
+
+Например, `saiw)` окружает слово круглыми скобками, `sd)` удаляет их,
+а `sr)"` заменяет скобки двойными кавычками.
 
 Основные файлы: `lua/kenedy/config/opts.lua` — общие настройки,
 `after/ftplugin/` — настройки языков, `lua/kenedy/config/autocmd.lua` — перенос
