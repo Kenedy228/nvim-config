@@ -1,4 +1,5 @@
 return {
+	clangd = {},
 	lua_ls = {},
 	ts_ls = {},
 	marksman = {},

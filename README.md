@@ -174,6 +174,12 @@ nvim-lspconfig; `mason = false` исключает его из автомати�
 Dart использует внешний SDK, остальные серверы из списка устанавливает Mason.
 Установленные вручную через Mason серверы не включаются, пока их нет в списке.
 
+C поддерживается через `clangd`: диагностика, автодополнение, переходы к определениям
+и форматирование через LSP. Mason устанавливает сервер автоматически.
+Для проектов с нестандартными путями заголовков и флагами компиляции предоставь
+`compile_commands.json` (например, в CMake: `-DCMAKE_EXPORT_COMPILE_COMMANDS=ON`).
+Стиль форматирования можно задать файлом `.clang-format` в проекте.
+
 Парсеры перечислены в `lua/kenedy/config/treesitter.lua`: C, Lua, Vim/Vimdoc,
 Query, Go, JavaScript, TypeScript, Svelte, Markdown/Markdown inline, LaTeX и Dart.
 
@@ -196,7 +202,7 @@ friendly-snippets подключён как зависимость Blink и ав
 
 Conform форматирует при сохранении: Lua через StyLua, Go через goimports/gofmt,
 JS/TS/JSON/YAML/Markdown/CSS/HTML через Prettier. Для остальных типов файлов
-(включая Dart) используется доступный LSP-форматтер. Локальный Prettier проекта
+(включая C и Dart) используется доступный LSP-форматтер. Локальный Prettier проекта
 имеет приоритет перед установленным через Mason.
 
 На новой машине установи инструменты: `:MasonInstall stylua prettier goimports`.
