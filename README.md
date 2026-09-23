@@ -1,6 +1,6 @@
 # Neovim config
 
-Личный Lua-конфиг: lazy.nvim, Blink, Telescope с fzf, Oil, Harpoon,
+Личный Lua-конфиг: lazy.nvim, Blink, Telescope с fzf, Oil, nvim-tree, Harpoon,
 Gitsigns, UndoTree, LSP/Mason, Treesitter и VimTeX.
 
 ## Требования
@@ -178,6 +178,8 @@ C поддерживается через `clangd`: диагностика, ав
 и форматирование через LSP. Mason устанавливает сервер автоматически.
 Для проектов с нестандартными путями заголовков и флагами компиляции предоставь
 `compile_commands.json` (например, в CMake: `-DCMAKE_EXPORT_COMPILE_COMMANDS=ON`).
+
+Python поддерживается через `pylsp`, который Mason устанавливает автоматически.
 Стиль форматирования можно задать файлом `.clang-format` в проекте.
 
 Парсеры перечислены в `lua/kenedy/config/treesitter.lua`: C, Lua, Vim/Vimdoc,
@@ -220,6 +222,7 @@ JS/TS/JSON/YAML/Markdown/CSS/HTML через Prettier. Для остальных
 | `<leader>fw` / `<leader>fg` | Поиск текста внутри файлов проекта |
 | `<leader>sr` | grug-far: поиск и замена; в Visual — с выделенным текстом |
 | `<leader>sw` | grug-far: поиск и замена текста слова под курсором |
+| `<leader>e` | Открыть или закрыть дерево файлов nvim-tree |
 | `<leader>pv` | Oil |
 | `<leader>u` | UndoTree |
 | `<leader>px` / `<leader>pb` | Добавить файл в Harpoon / открыть список |

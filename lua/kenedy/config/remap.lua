@@ -23,6 +23,9 @@ vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist)
 -- oil bindings
 vim.keymap.set("n", "<leader>pv", ":Oil<CR>", { desc = "открыть родительскую директорию через Oil" })
 
+-- nvim-tree bindings
+vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", { desc = "открыть дерево файлов" })
+
 -- undotree bindings
 vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle, { desc = "открыть локальную историю изменений файла" })
 
