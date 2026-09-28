@@ -3,6 +3,7 @@ return {
 	{ "catppuccin/nvim", name = "catppuccin", lazy = false, priority = 1000, opts = {} },
 	{ "rebelot/kanagawa.nvim", lazy = false, priority = 1000, opts = {} },
 	{ "ellisonleao/gruvbox.nvim", lazy = false, priority = 1000, opts = {} },
+	{ "PurpleSchool/purpleschool-nvim", lazy = false, priority = 1000 },
 	{
 		"rose-pine/neovim",
 		name = "rose-pine",

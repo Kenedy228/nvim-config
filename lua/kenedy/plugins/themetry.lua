@@ -3,7 +3,7 @@ return {
 	lazy = false,
 	dependencies = {
 		"ring0-dark.nvim", "github-theme", "rose-pine", "zenbones.nvim", "gruber-darker.nvim", "koda.nvim",
-		"tokyonight.nvim", "catppuccin", "kanagawa.nvim", "gruvbox.nvim",
+		"tokyonight.nvim", "catppuccin", "kanagawa.nvim", "gruvbox.nvim", "purpleschool-nvim",
 	},
 	opts = {
 		livePreview = true,
@@ -43,6 +43,7 @@ return {
 			{ name = "Koda Light", colorscheme = "koda-light", before = "vim.o.background = 'light'" },
 			{ name = "Koda Moss", colorscheme = "koda-moss", before = "vim.o.background = 'dark'" },
 			{ name = "Koda Glade (light)", colorscheme = "koda-glade", before = "vim.o.background = 'light'" },
+			{ name = "PurpleSchool", colorscheme = "purpleschool", before = "vim.o.background = 'dark'" },
 		},
 	},
 }
