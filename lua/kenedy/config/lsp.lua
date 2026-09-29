@@ -3,6 +3,7 @@ return {
 	lua_ls = {},
 	pylsp = {},
 	ts_ls = {},
+	svelte = {},
 	marksman = {},
 	-- Dart's language server is provided by the Dart/Flutter SDK.
 	dartls = { mason = false },
